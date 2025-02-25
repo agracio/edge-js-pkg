@@ -5,7 +5,13 @@
   },
   "scripts": {
     "start": "node index.js",
-    "pkg": "pkg index.js --targets win -o Edge.exe"
-  }
-
+    "pkg": "pkg index.js --targets node18-win -o Edge.exe"
+  },
+  "files": [
+    "node_modules/edge-js/"
+  ],
+  "directories": {
+    "assets:": "node_modules/edge-js"
+  },
+  "assets:": "node_modules/edge-js"
 }
