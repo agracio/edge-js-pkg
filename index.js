@@ -1,8 +1,8 @@
 
-//var edge = require('edge-js').createRequire();
-// const { createRequire } = require('node:module');
-// require = createRequire(__filename); 
-var edge = require('edge-js')
+// require() for Node.js single executable applications packaging
+const { createRequire } = require('node:module');
+require = createRequire(__filename); 
+var edge = require('edge-js');
 
 var hello = edge.func(function () {/*
 	async (input) =>
