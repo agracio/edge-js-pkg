@@ -2,5 +2,10 @@
   "dependencies": {
     "edge-js": "^23.1.4",
     "pkg": "^5.8.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "pkg": "pkg index.js --targets win -o Edge.exe"
   }
+
 }
