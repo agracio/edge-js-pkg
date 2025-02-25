@@ -1,10 +1,11 @@
 
 # edge-js-pkg
 
-### PKG
-
 - `npm i`
 - `npm start` to run `node index.js`
+
+
+### PKG
 - `npm run pkg` to package standalone exe
 
 ### single executable applications
