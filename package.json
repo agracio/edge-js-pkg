@@ -1,17 +1,16 @@
 {
   "dependencies": {
     "edge-js": "^23.1.4",
-    "pkg": "^5.8.1"
+    "pkg": "npm:@yao-pkg/pkg@^6.3.1"
   },
   "scripts": {
     "start": "node index.js",
-    "pkg": "pkg index.js --targets node18-win -o Edge.exe"
+    "pkg": "pkg index.js -c package.json --output Edge.exe"
   },
-  "files": [
-    "node_modules/edge-js/"
-  ],
-  "directories": {
-    "assets:": "node_modules/edge-js"
-  },
-  "assets:": "node_modules/edge-js"
+  "pkg": {
+    "assets": "node_modules/edge-js/",
+    "targets": [
+      "node20-win"
+    ]
+  }
 }

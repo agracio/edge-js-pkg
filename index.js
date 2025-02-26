@@ -1,10 +1,7 @@
 
-// require() for Node.js single executable applications packaging
-const { createRequire } = require('node:module');
-require = createRequire(__filename); 
-var edge = require('edge-js');
+const edge = require('edge-js');
 
-var hello = edge.func(function () {/*
+const hello = edge.func(function () {/*
 	async (input) =>
 	{
 		return ".NET welcomes " + input.ToString();
