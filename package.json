@@ -1,4 +1,8 @@
 {
+  "name": "edge-js-pkg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
   "dependencies": {
     "edge-js": "^23.1.4",
     "pkg": "npm:@yao-pkg/pkg@^6.3.1"
@@ -8,9 +12,9 @@
     "pkg": "pkg index.js -c package.json --output Edge.exe"
   },
   "pkg": {
-    "assets": "node_modules/edge-js/",
+    "assets": "node_modules/edge-js/lib/native/win32",
     "targets": [
-      "node20-win"
+      "node16-win-x64"
     ]
   }
 }
