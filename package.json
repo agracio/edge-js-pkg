@@ -5,16 +5,16 @@
   "bin": "index.js",
   "dependencies": {
     "edge-js": "^23.1.4",
-    "pkg": "^5.8.1"
+    "pkg": "npm:@yao-pkg/pkg@^6.3.1"
   },
   "scripts": {
     "start": "node index.js",
-    "pkg": "pkg index.js -c package.json --output Edge.exe"
+    "pkg": "pkg index.js -c package.json --no-native-build --output Edge.exe"
   },
   "pkg": {
     "assets": "node_modules/edge-js/lib/native/win32",
     "targets": [
-      "node16-win-x64"
+      "node20-win"
     ]
   }
 }
