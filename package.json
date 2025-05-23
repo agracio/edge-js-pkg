@@ -4,8 +4,7 @@
   "main": "index.js",
   "bin": "index.js",
   "dependencies": {
-    "edge-js": "^24.0.3",
-    "pkg": "@yao-pkg/pkg@^6.5.1"
+    "edge-js": "^24.0.3"
   },
   "scripts": {
     "start": "node index.js",
@@ -13,6 +12,7 @@
     "pkg-webpack": "webpack --config ./webpack.config.js && pkg ./dist/main.js --output edge-webpack.exe"
   },
   "devDependencies": {
+    "pkg": "@yao-pkg/pkg@^6.5.1",
     "webpack-cli": "^6.0.1"
   }
 }
