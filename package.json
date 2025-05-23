@@ -4,17 +4,16 @@
   "main": "index.js",
   "bin": "index.js",
   "dependencies": {
-    "edge-js": "^23.1.4",
-    "pkg": "npm:@yao-pkg/pkg@^6.3.1"
+    "edge-js": "^24.0.3",
+    "pkg": "@yao-pkg/pkg@^6.5.1"
   },
   "scripts": {
     "start": "node index.js",
-    "pkg": "pkg index.js -c package.json --no-native-build --output Edge.exe"
+    "pkg": "pkg ./index.js -c pkg.config.json --output edge.exe",
+    "pkg-webpack": "webpack --config ./webpack.config.js && pkg ./dist/main.js --output edge-webpack.exe"
   },
-  "pkg": {
-    "assets": "node_modules/edge-js/lib/native/win32",
-    "targets": [
-      "node20-win"
-    ]
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack-cli": "^6.0.1"
   }
 }
