@@ -10,6 +10,7 @@
 
 - Supports using calls to dll methods.
 - Support inline C# and .csx files.
+- Inline C# code must use ES6 templated strings instead of comments.
 - Requires `node_modules/edge-js` and `node_modules/edge-cs` to be in the same folder with executable.
 
 ### How to run

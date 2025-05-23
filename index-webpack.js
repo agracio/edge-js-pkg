@@ -16,6 +16,7 @@ process.env.EDGE_USE_CORECLR=1;
 
 const edge = require('edge-js');
 
+// Requires ES6 templated strings
 const getPerson = edge.func(`
     using System.Threading.Tasks;
     using System;
